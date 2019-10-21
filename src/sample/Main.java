@@ -75,15 +75,22 @@ public class Main extends Application {
             public void handle(MouseEvent event) {
                 int pageNumber = comboBox.getValue();
                 StringBuilder content = new StringBuilder();
+                StringBuilder beforeString = new StringBuilder();
                 if (pageNumber < operator.getPages().size()) {
-                    content = new StringBuilder(getString(pageNumber, content.toString()));
+                    for (int i = 0; i < pageNumber; i++) {
+                        Page page = (Page) operator.getPages().get(i);
+                        String pageContent = new String(page.getPageContent());
+                        beforeString.append(pageContent.trim());
+                    }
+                    beforeString.append(textArea.getText().trim());
+                    content.append(beforeString.toString().trim());
                     for (int i = pageNumber + 1; i < operator.getPages().size(); i++) {
                         Page page = (Page) operator.getPages().get(i);
                         String pageContent = new String(page.getPageContent());
                         content.append(pageContent.trim());
                     }
                 } else {
-                    content = new StringBuilder(getString(pageNumber, content.toString()));
+                    content = new StringBuilder(getStringBeforeChangedPage(pageNumber, content.toString()));
                 }
                 operator.reWriteFile(content.toString());
                 operator.initialFile(fileName.getText());
@@ -104,7 +111,7 @@ public class Main extends Application {
 
     }
 
-    private String getString(int pageNumber, String content) {
+    private String getStringBeforeChangedPage(int pageNumber, String content) {
         StringBuilder contentBuilder = new StringBuilder(content);
         for (int i = 0; i < operator.getPages().size() - 1; i++) {
             Page page = (Page) operator.getPages().get(i);
