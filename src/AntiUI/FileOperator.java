@@ -9,6 +9,7 @@ public class FileOperator {
     private String fileName;
     private File file;
     private RandomAccessFile accessFile;
+    private FileWriter cleaner;
     private List<Page> pages = new ArrayList<>();
     private byte[] tempContent;
 
@@ -27,7 +28,7 @@ public class FileOperator {
         this.fileName = fileName;
         file = new File(fileName);
         try {
-            accessFile = new RandomAccessFile(file, "rw");
+            accessFile = new RandomAccessFile(file, "r");
             int sum = 0;
             int length = 0;
             for (int count = 0; count * PAGE_SIZE < file.length(); count++) {
@@ -41,14 +42,26 @@ public class FileOperator {
                 accessFile.readFully(tempContent, 0, length);
                 pages.add(new Page(count, tempContent));
             }
+            accessFile.close();
 
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    public void reWriteFile(int pageNumber) {
+    public void reWriteFile(String content) {
+        try {
+            cleaner = new FileWriter(file);
+            cleaner.write("");
+            cleaner.flush();
+            cleaner.close();
 
+            accessFile = new RandomAccessFile(file,"rw");
+            accessFile.writeBytes(content);
+            accessFile.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public String getFileName() {

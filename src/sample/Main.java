@@ -1,9 +1,9 @@
 package sample;
 
 import AntiUI.FileOperator;
+import AntiUI.Page;
 import AntiUI.PageTable;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -45,6 +45,7 @@ public class Main extends Application {
         openFile.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
+                textArea.clear();
                 operator.initialFile(fileName.getText());
                 refreshComboBox();
             }
@@ -62,11 +63,9 @@ public class Main extends Application {
                 for (int i = 0; i * 128 < 4 * 1024; i++) {
                     System.arraycopy(textContent, i * 128, line, 0, 128);
                     String tempContent = new String(line);
-                    textArea.appendText(tempContent + "\n");
+                    textArea.appendText(tempContent);
                 }
                 refreshStack();
-
-
             }
         });
 
@@ -74,7 +73,21 @@ public class Main extends Application {
         save.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-
+                int pageNumber = comboBox.getValue();
+                StringBuilder content = new StringBuilder();
+                if (pageNumber < operator.getPages().size()) {
+                    content = new StringBuilder(getString(pageNumber, content.toString()));
+                    for (int i = pageNumber + 1; i < operator.getPages().size(); i++) {
+                        Page page = (Page) operator.getPages().get(i);
+                        String pageContent = new String(page.getPageContent());
+                        content.append(pageContent.trim());
+                    }
+                } else {
+                    content = new StringBuilder(getString(pageNumber, content.toString()));
+                }
+                operator.reWriteFile(content.toString());
+                operator.initialFile(fileName.getText());
+                refreshComboBox();
             }
         });
 
@@ -82,13 +95,29 @@ public class Main extends Application {
         addPage.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-
+                int totalAfter = comboBox.getItems().size();
+                comboBox.getItems().addAll(totalAfter);
+                Page newPage = new Page(totalAfter, new byte[4 * 1024]);
+                operator.getPages().add(newPage);
             }
         });
 
     }
 
+    private String getString(int pageNumber, String content) {
+        StringBuilder contentBuilder = new StringBuilder(content);
+        for (int i = 0; i < operator.getPages().size() - 1; i++) {
+            Page page = (Page) operator.getPages().get(i);
+            String pageContent = new String(page.getPageContent());
+            contentBuilder.append(pageContent.trim());
+        }
+        content = contentBuilder.toString();
+        content += textArea.getText().trim();
+        return content;
+    }
+
     private void refreshComboBox() {
+        comboBox.getItems().clear();
         for (int i = 0; i < operator.getPages().size(); i++) {
             comboBox.getItems().addAll(i);
         }
