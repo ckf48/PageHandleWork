@@ -1,4 +1,4 @@
-narrator crashes in the desert and makes the acquaintance of the little prince
+crashes in the desert and makes the acquaintance of the little prince
 So I lived my life alone, without anyone that I could really talk to, until I had an accident with my plane in the Desert of Sahara, six years ago. Something was broken in my engine. And as I had with me neither a mechanic nor any passengers, I set myself to attempt the difficult repairs all alone. It was a question of life or death for me: I had scarcely enough drinking water to last a week.
 The first night, then, I went to sleep on the sand, a thousand miles from any human habitation. I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean. Thus you can imagine my amazement, at sunrise, when I was awakened by an odd little voice. It said:
 "If you please-- draw me a sheep!"
@@ -66,7 +66,7 @@ I was very surprised to see a light break over the face of my young judge:
 "Because where I live everything is very small..."
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
 He bent his head over the drawing:
-"Not so small that-- Look! He has gone tosleep..."
+"Not so small that-- Look! He has gonetosleep..."
 And that is how I made the acquaintance of the little prince.
 - the narrator crashes in the desert and makes the acquaintance of the little prince
 So I lived my life alone, without anyone that I could really talk to, until I had an accident with my plane in the Desert of Sahara, six years ago. Something was broken in my engine. And as I had with me neither a mechanic nor any passengers, I set myself to attempt the difficult repairs all alone. It was a question of life or death for me: I had scarcely enough drinking water to last a week.
@@ -135,7 +135,7 @@ I was very surprised to see a light break over the face of my young judge:
 "Why?"
 "Because where I live everything is very small..."
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
-He bent his head over the drawing:
+Hebent his head over the drawing:
 "Not so small that-- Look! He has gone to sleep..."
 And that is how I made the acquaintance of the little prince.
 - the narrator crashes in the desert and makes the acquaintance of the little prince
@@ -169,7 +169,7 @@ I was very surprised to see a light break over the face of my young judge:
 "That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
-"There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."Hebent his head over the drawing:
+"There will surely be enough grass for him," I said. "It is a very smallsheep that I have given you."Hebent his head over the drawing:
 "Not so small that-- Look! He has gone to sleep..."
 And that is how I made the acquaintance of the little prince.
 - the narrator crashes in the desert and makes the acquaintance of the little prince
@@ -203,7 +203,7 @@ I was very surprised to see a light break over the face of my young judge:
 "That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
-"There will surely be enough grassfor him," I said. "It is a very smallsheepthat I have given you."
+"There will surely be enough grassforhim," I said. "It is a very smallsheepthat I have given you."
 He bent his head over the drawing:
 "Not so small that-- Look! He has gone to sleep..."
 And that is how I made the acquaintance of the little prince.
@@ -272,7 +272,7 @@ And I threw out an explanation with it.
 I was very surprised to see a light break over the face of my young judge:
 "That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
-"Because where I live everything is very small...""There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
+"Because where I liveeverything is very small...""There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
 He bent his head over the drawing:
 "Not so small that-- Look! He has gone to sleep..."
 And that is how I made the acquaintance of the little prince.
@@ -374,7 +374,7 @@ By this time my patience was exhausted, because I was in a hurry to start taking
 And I threw out an explanation with it.
 "This is only his box. The sheep you asked for is inside."
 I was very surprised to see a light break over the face of my young judge:
-"That is exactly the way I wanted it! Do you think thatthis sheep willhave to have a great deal of grass?"
+"That is exactly the way I wantedit! Do you think thatthis sheep willhave to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
@@ -408,8 +408,7 @@ But it was rejected too, just like the others.
 By this time my patience was exhausted, because I was in a hurry to start taking my engine apart. So I tossed off this drawing.
 And I threw out an explanation with it.
 "This is only his box. The sheep you asked for is inside."
-I was very surprised to see a light break over the face ofmy young judge:
-"That is exactly theway I wantedit! Do you think that this sheep will have to have a great deal of grass?"
+I was very surprised to see a light break over the face ofmy young judge:"That is exactly theway I wantedit! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
@@ -443,7 +442,7 @@ But it was rejected too, just like the others.
 By this time my patience was exhausted, because I was in a hurry to start taking my engine apart. So I tossed off this drawing.
 And I threw out an explanation with it.
 "This is only his box. The sheep you asked for is inside."
-I was very surprisedto see a light break over the face of my youngjudge:"That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
+I was very surprisedto see a light breakoverthe face of my youngjudge:"That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
@@ -511,7 +510,7 @@ But it was rejected too, just like the others.
 "This one is too old. I want a sheep that will live a long time."
 By this time my patience was exhausted, because I was in a hurry to start taking my engine apart. So I tossed off this drawing.
 And I threw out an explanation with it.
-"This is only his box. The sheep you asked foris inside."I was very surprised to see a light break over the face of my young judge:
+"This is only his box. The sheepyou asked foris inside."I was very surprised to see a light break over the face of my young judge:
 "That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
 "Because where I live everything is very small..."
@@ -544,8 +543,7 @@ So then I did my drawing over once more.
 But it was rejected too, just like the others.
 "This one is too old. I want a sheep that will live a long time."
 By this time my patience was exhausted, because I was in a hurry to start taking my engine apart. So I tossed off this drawing.
-And I threwout an explanation with it.
-"This is only his box.The sheepyou asked for is inside."
+And I threwout an explanation with it."This isonly his box.The sheepyou asked for is inside."
 I was very surprised to see a light break over the face of my young judge:
 "That is exactly the way I wanted it! Do you think that this sheep will have to have a great deal of grass?"
 "Why?"
@@ -553,4 +551,4 @@ I was very surprised to see a light break over the face of my young judge:
 "There will surely be enough grass for him," I said. "It is a very small sheep that I have given you."
 He bent his head over the drawing:
 "Not so small that-- Look! He has gone to sleep..."
-And that is how I made the acquaintance of the little prince.
+And that is how I made the acquaintance of the little prince.zaaaaaaaaaaa
